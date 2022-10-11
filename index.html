@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pig Game</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="box1">
+        <h2 class="p1">PLAYER 1</h2>
+        <p class="par" id="score-1">0</p>
+        <div class="current">
+          <p class="cur par">CURRENT</p>
+          <p class="cur par" id="currentScore-1">0</p>
+        </div>
+      </div>
+      <div class="box2 opacity">
+        <h2 class="p2">PLAYER 2</h2>
+        <p class="par" id="score-2">0</p>
+        <div class="current">
+          <p class="cur par">CURRENT</p>
+          <p class="cur par" id="currentScore-2">0</p>
+        </div>
+      </div>
+    </div>
+    <img class="dice hiddenD" src="photos/dice-1.png" alt="dice" />
+
+    <a class="btn btnNew btn-white btn-animated"
+      ><i class="fas fa-sync-alt fa-lg"></i> NEW GAME</a
+    >
+    <a class="btn btnRoll btn-white btn-animated"
+      ><i class="fas fa-dice fa-lg"></i>ROLL DICE</a
+    >
+    <a class="btn btnHold btn-white btn-animated"
+      ><i class="fas fa-pause fa-lg"></i>HOLD</a
+    >
+
+    <p class="htp">How to play?</p>
+
+    <div class="intro hidden">
+      <button class="close">&times;</button>
+      <h1 class="how-h1">How to play?</h1>
+      <p class="how">
+        Choose a player to go first. That player throws a dice and scores as
+        many points as the total shown. The player may continue rolling and
+        accumulating points (but risk rolling a 1) or end his turn. If the
+        player rolls a 1 his turn is over, he loses all points he accumulated
+        that turn, and he passes the dice to the next player. Play passes from
+        player to player until a winner is determined.
+      </p>
+      <br />
+      <h1 class="how-h1">How do you win?</h1>
+      <p class="how">
+        The first player to accumulate 100 or more points wins the game.
+      </p>
+    </div>
+
+    <div class="overlay hidden"></div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
